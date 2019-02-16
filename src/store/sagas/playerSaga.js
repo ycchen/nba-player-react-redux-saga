@@ -38,18 +38,21 @@ export function* retrievePlayer(action) {
     if (response.data.name) {
       let image = `${imageURL}${surname}/${firstName}`
       let stats = []
-
+      console.log('==response.data==',response.data)
       for(let key in response.data) {
         if(statsWeWant.includes(key)) {
           stats.push({label: key, value: response.data[key]})
         }
       }
-
-      let palyerProfile = {
+      console.log('==stats==', stats)
+      console.log('==image==', image)
+      
+      let playerProfile = {
         ...response.data,
         stats,
         image
       }
+      yield put({type: GET_PLAYER_SUCCESS, payload: playerProfile })
     }
   } catch (e) {
     yield put({type: 'GET_PLAYER_FAIL', payload: e})

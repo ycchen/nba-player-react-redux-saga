@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function PlayerPhoto() {
+export default function PlayerPhoto({url, name}) {
   return (
-    <div>
-      Player Photo Component
-    </div>
+    <>
+    <img src={url} alt={name} />
+    <p>Image</p>
+    </>
   )
 }
