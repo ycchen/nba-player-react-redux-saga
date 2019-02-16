@@ -1,8 +1,8 @@
 import { GET_PLAYER } from './actionTypes'
 
 export function getPlayer(firstName, surname) {
-  return (
+  return {
     type: GET_PLAYER,
     payload: { firstName, surname }
-  )
+  }
 }

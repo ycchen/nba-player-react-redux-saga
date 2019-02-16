@@ -20,8 +20,10 @@ const statsWeWant = [
 ]
 
 function fetchPlayerData(firstName, surname) {
+  console.log('=====first=', firstName)
+  console.log('=====last=', surname)
   let url = `${statsURL}${surname}/${firstName}`
-
+  console.log('===url=', url)
   return axios.get(
     url
   )
