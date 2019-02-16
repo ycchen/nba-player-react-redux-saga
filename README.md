@@ -66,3 +66,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+#####
+
+```
+URL: https://medium.freecodecamp.org/build-a-nba-player-profile-fetcher-with-react-redux-saga-and-styled-components-680cde2b8254
+
+GITHUB: https://github.com/jonathanpuc/nba-mania
+
+npx create-react-app nba-players
+
+npm install --save redux react-redux redux-saga axios styled-components
+
+
+```
